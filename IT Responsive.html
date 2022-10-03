@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="iqbal_travels.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="theme-color" content="red">
+<style type="text/css" media="all">
+  html {
+      scroll-behavior: smooth;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body {
+      background-color:white;
+      margin:0;
+      padding:0;
+    }
+nav {
+    height:40px;
+    display:flex;
+   background-color: red;
+    align-items: center;
+    position:sticky;
+    top:0;
+   justify-content: space-between;
+   
+}
+ul {
+    
+   
+ 
+   
+     margin-right:3px;
+     margin-top:16px;
+    }
+    li {
+      list-style: none;
+      background-color:white;
+      margin:0px 2.6px;
+      border-radius:2px;
+   
+     
+     align-items: center;
+    display:inline-block;
+    }
+    li:hover {
+      background-color:black;
+    }
+    li:hover a {
+      color:white;
+      text-decoration: none;
+    }
+   a {
+      text-decoration: none;
+     display:block;
+      color:white;
+      font-weight: 500;
+      margin:4px;
+      
+    }
+    nav a {
+      color:black;
+      font-size: 12px;
+    }
+    .logo  {
+     display:grid;
+     place-content: center;
+     color:white;
+      font-weight: 540;
+     text-align:center;
+   /* flex-basis:40%;*/
+   margin-left:10px;
+      margin-right:-20px;
+    
+      font-size:12px;
+    }
+   .grid-container {
+     background-color:;
+     display: grid;
+     grid-template-columns:auto auto;
+     place-content: center;
+     grid-gap: 14px;
+     padding-top: 50px
+     
+   }
+  
+   
+    
+      
+    
+    .grid-item {
+ /*    display:flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     margin: auto;
+     */
+   
+    }
+  
+   
+     
+      
+    
+    
+       
+     
+    
+    
+      .grid-item{
+       
+       box-shadow:0px 5px 5px #b4bfcb, -2px -2px 5px white;
+        border-radius:12px;
+         
+       border:1px solid black;
+      
+        
+        
+        width:150px;
+        
+        background-color: #ebeef1;
+      }
+      
+      .landing {
+        background-color:;
+        text-align: center;
+      
+      } 
+      .landing h1 {
+        font-size: 24px;
+        padding-top: 100px;
+      }
+      .landing p {
+        width:300px;
+        margin: auto;
+        padding-bottom:20px;
+      }
+     .iq h6 {
+       font-size: 16px;
+       background-color: white;
+       width:80px;
+       font-weight: 450;
+       margin:auto;
+       border-radius:2px;
+       
+     } 
+      .deal {
+        background-color: black;
+        width:200px;
+        margin: auto;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding:2px;
+        border:1px solid black;
+        margin:40px auto;
+        height:28px;
+      }
+     
+      
+     
+      .icons {
+        width:100px;
+        color:white;
+      }
+      .offer {
+        width:100px;
+        
+      }
+      .offer button {
+        width:100px;
+        border:none;
+        height:26px;
+      
+      }
+      .offer button a {
+        color:black;
+        
+        padding:2px;
+      }
+      .offer button:hover {
+        background-color: lawngreen;
+        border:none;
+        
+      }
+      
+      .sample {
+        border-radius:400px;
+        height:120px;
+      }
+      
+      
+     .text {
+      
+     background-color: floralwhite;
+    
+       font-weight:700;
+       border-radius:10px 10px 0px 0px;
+       font-size:14px;
+       height:50px;
+       padding:10px;
+      text-align: center;
+      text-transform: uppercase;
+     
+     }
+     .click {
+       display:flex;
+      align-items: center;
+      justify-content: center;
+     height:40px;
+     border-radius:0 0 10px 10px;
+background-color:#262626;
+     text-align: center;
+     font-size:14px;
+     
+     }
+     .price {
+      
+       background-color:#ebeef1;
+       color:black;
+   /*   box-shadow: 1px 1px 4px red, inset 1px 1px 4px #b4bfcb;*/
+       border:none;
+       border-radius:4px;
+       
+      
+       font-weight:500;
+     }
+     .click * {
+       margin:3px;
+       height:20px;
+     }
+     .buy {
+       background-color:/*#ebeef1*/red;
+    /*   border:2px solid white;*/
+       border: none;
+       border-radius: 4px;
+     
+      
+       
+       
+       cursor:pointer;
+     }
+    .buy:hover {
+      background-color:black;
+    }
+   .buy a {
+       text-decoration:none;
+     
+       
+     }
+   
+    h4 {
+      text-align:center;
+      font-size:20px;
+    }
+     h5 {
+       margin:20px;
+       text-align:left;
+       font-weight:400;
+       font-size:15px;
+     }
+ 
+       
+    .container-register {
+      width:80%;
+      display:flex;
+      flex-direction: column;
+      align-items:center ;
+    }
+.container-register {
+  
+  width:80%;
+  padding:30px;
+  height:360px;
+  margin:auto;
+  font-size:40px;
+  border-radius:10px;
+  background-color:floralwhite;
+  text-align: center;
+ 
+}
+
+  
+
+  .container-register input {
+    font-size: 20px;
+    
+   width:200px;
+    
+   
+  }
+  
+    h4 {
+     color:white;
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    width:300px;
+    border-radius:2px;
+    padding:2px;
+    text-align: center;
+    margin:auto;
+   }
+ 
+ .form-control {
+   width:200px;
+   font-size:20px;
+ }
+  
+/* Media Query */
+      
+ @media screen and (min-width:900px) {
+   
+   body {
+     background-image:url("https://i.ibb.co/ng2hzCW/pexels-aleksandar-pasaric-325185.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+   }
+   nav {
+     background-color:white;
+     
+   }
+   .logo p {
+     color:black;
+    
+     margin-left:50px;
+   }
+   nav ul {
+     margin-right: 50px;
+   }
+   nav ul li {
+     margin:0 20px;
+    
+   }
+  
+    
+   
+   
+   .grid-container {
+     margin: 50px;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     overflow:scroll;
+     flex-wrap:wrap;
+     
+   }
+   .grid-item {
+     margin:10px;
+     box-shadow: none;
+    
+   }
+  .item-2 {
+  
+    
+  }
+
+.container-register {
+  width:80%;
+  padding:30px;
+  height:360px;
+  margin:auto;
+  font-size:40px;
+  border-radius:10px;
+  background-color: transparent;
+  background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3));
+  text-align: center;
+ 
+}
+
+  .container-register input {
+    font-size: 20px;
+    
+   width:200px;
+    
+   
+  }
+  
+    h4 {
+     color:white;
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    width:300px;
+    border-radius:2px;
+    padding:2px;
+    text-align: center;
+    margin:auto;
+   }
+ 
+ .form-control {
+   width:200px;
+   font-size:20px;
+ }
+  
+
+
+ }
+
+</style>
+
+</head>
+
+<body>
+  
+    <div id="top"></div>
+     <nav>
+       <div class="logo">
+         <p>Iqbal Travels</p>
+       </div>
+      <ul>
+         <li><a href="#top">Home</a></li>
+         <li><a href="#apply">Apply</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+       </div>
+     </nav>
+    
+     <div class="landing">
+    
+
+       <h1>Iqbal Travels</h1>
+       <p><q>The world is a book and those who do not travel read only one page.</q></p>
+
+
+<div class="iq">
+<img src="https://i.ibb.co/M2xPfgB/IMG-20221002-145820.jpg" alt="IMG-20221002-145820" class="sample" border="0"></a>
+         <h6>Iqbal Khan</h6>
+   </div>
+   
+    <div class="deal">
+   <div class="icons">
+     
+  
+ 
+       <i class="fa-solid fa-plane"></i>
+       <i class="fa-solid fa-train"></i>
+  
+  <i class="fa-sharp fa-solid fa-hotel"></i>
+</div>
+<div class="offer">
+  
+
+<button><a href="#seeoffers">See offers</a></button>
+</div>
+</div>
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,192L48,208C96,224,192,256,288,229.3C384,203,480,117,576,112C672,107,768,181,864,197.3C960,213,1056,171,1152,160C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+       
+
+
+     </div>
+       
+     
+     <div id="seeoffers"></div>   
+     
+    
+    <div class="grid-container">
+    
+    <div class="grid-item">
+      <div class="text">bangalore to Patna flight ticket</div>
+      <div class="click"><button class="price">6700rs</button><button class="buy"><a href="https://wa.me/918789493087?text=I%20want%20to%20buy%20bangalore%20to%20patna%20ticket%20for%20 6700 %20rs">Buy Now</a></button></div>
+    </div>
+    <div class="grid-item">
+      <div class="text">Bangalore to Darbhanga Flight ticket</div>
+      <div class="click"><button class="price">5500rs</button><button class="buy"><a href="https://wa.me/918789493087?text=I%20want%20to%20buy%20bangalore%20to%20patna%20ticket%20for%20 5500 %20rs">Buy Now</a></button></div>
+    </div>
+<div class="grid-item">
+      <div class="text">bangalore to delhi flight ticket</div>
+      <div class="click"><button class="price">5000rs</button><button class="buy"><a href="#">Buy Now</a></button></div>
+    </div>
+<div class="grid-item">
+      <div class="text">bangalore to lucknow flight ticket</div>
+      <div class="click"><button class="price">4800rs</button><button class="buy"><a href="#">Buy Now</a></button></div>
+    </div>
+<div class="grid-item">
+      <div class="text">bangalore to Patna flight ticket</div>
+      <div class="click"><button class="price">6500rs</button><button class="buy"><a href="#">Buy Now</a></button></div>
+    </div>
+<div class="grid-item">
+      <div class="text">bangalore to Patna flight ticket</div>
+      <div class="click"><button class="price">6500rs</button><button class="buy"><a href="#">Buy Now</a></button></div>
+    </div>
+      
+    <div class="grid-item">
+      <div class="text">bangalore to Patna flight ticket</div>
+      <div class="click"><button class="price">6700rs</button><button class="buy"><a href="https://wa.me/918789493087?text=I%20want%20to%20buy%20bangalore%20to%20patna%20ticket%20for%20 6700 %20rs">Buy Now</a></button></div>
+    </div>
+    <div class="grid-item">
+      <div class="text">Bangalore to Darbhanga Flight ticket</div>
+      <div class="click"><button class="price">5500rs</button><button class="buy"><a href="https://wa.me/918789493087?text=I%20want%20to%20buy%20bangalore%20to%20patna%20ticket%20for%20 5500 %20rs">Buy Now</a></button></div>
+    </div>
+<div class="grid-item">
+      <div class="text">bangalore to delhi flight ticket</div>
+      <div class="click"><button class="price">5000rs</button><button class="buy"><a href="#">Buy Now</a></button></div>
+    </div>
+<div class="grid-item">
+      <div class="text">bangalore to lucknow flight ticket</div>
+      <div class="click"><button class="price">4800rs</button><button class="buy"><a href="#">Buy Now</a></button></div>
+    </div>
+<div class="grid-item">
+      <div class="text">bangalore to Patna flight ticket</div>
+      <div class="click"><button class="price">6500rs</button><button class="buy"><a href="#">Buy Now</a></button></div>
+    </div>
+<div class="grid-item">
+      <div class="text">bangalore to Patna flight ticket</div>
+      <div class="click"><button class="price">6500rs</button><button class="buy"><a href="#">Buy Now</a></button></div>
+    </div>
+  
+  
+  
+    </div>
+    
+  
+    <div id="apply">
+    </div>
+   
+   
+   <div class="item-2">
+     
+   
+     
+    <br>
+    <div class="container-register">
+ <h4>Submit a Custom Request</h4>
+      <div class="row">
+            <div class="col-md-12">
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel"
+                    aria-labelledby="home-tab">
+                    
+                    <div class="row register-form">
+                        <div class="col-md-12">
+                            <form autocomplete="off">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control"
+                                        placeholder="Enter Name " value="" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" name="date" id="date" class="form-control"
+                                        placeholder="Enter Date" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="from" id="from" class="form-control"
+                                        placeholder="from" value="" required="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="to" id="to" class="form-control"
+                                        placeholder="to"
+                                        value="" reuired=""/></div>
+                              
+                                <div class="form-group">
+                                    <select class="form-control" id="service">
+                                        <option>Flight</option>
+                                                 <option>Train</option>
+                                        <option>Hotel</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="button" name="submit" class="btnSubmit btn-block" onclick="gotowhatsapp()" value="Submit" />
+                               </div>
+                            </form>
+                        
+                   
+               
+     
+      
+   
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function gotowhatsapp() {
+
+            var name = document.getElementById("name").value;
+            var date = document.getElementById("date").value;
+            var from = document.getElementById("from").value;
+            var to = document.getElementById("to").value;
+            var service = document.getElementById("service").value;
+          
+
+            var url = "https://wa.me/918789493087?text="
+                + "name: " + name + "%0a"
+                + "date: " + date + "%0a"
+                + "from: " + from + "%0a"
+                + "to: " + to + "%0a"
+                + "service:" + service + "%0a"
+            window.open(url, '_blank').focus();
+        }
+    </script></div></div>
+  <br><br><br><br>
+  <div id="about"><h4>About Us</h4>
+    <h5>Iqbal Travel (IT) is one of the most respected and successful names in the Indian travel industry, with a long and rich company heritage. The definitive resource for Indian travel content, its reputation has been built on journalistic credibility. IT is dedicated to the provision of objective, accurate, informative and reliable travel content in various formats. Domestic Flights, Train & Hotel Booking</h5>
+    </div>
+
+  
+    <div id="contact"></div>
+      <h4>Contact Us</h4>
+    
+    
+  </body>
+</html>
