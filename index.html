@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="theme-color" content="#D31027">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />-->
+    <!-- Google Webmaster -->
+    <meta name="google-site-verification" content="yRKLcPvLuzVsu8ACrPsrjtpCJoDb5qYbeQzlkN2xVvA" />
+    <!-- Google Webmaster End -->
+ 
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+91 87894 93087", // WhatsApp number
+            call_to_action: "", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+
+</head>
+
+  <style>
+    * {
+      margin:0;
+      padding:0;
+      box-shadow:border-box ;
+
+      
+    }
+    html {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    body {
+      background-color:white;
+    }
+   .card {
+     background-color: #262626;
+     color:white;
+     display: block;
+     margin: auto;
+   }
+
+    
+    .myform {
+      width:300px;
+      display:block;
+      margin:auto;
+    }
+    .h2 {
+      display:grid;
+      place-content: center;
+    }
+    .tab {
+      display:grid;
+      place-content: center;
+     
+    }
+  .navbar-brand {
+    letter-spacing: 1px;
+     padding:8px 16px;
+        font-family: 'Pattaya', sans-serif;
+    border-radius:6px;
+    color:white;
+    font-weight: 600;
+    font-size:1.3rem;
+  }
+
+     .landing {
+     position:relative;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     
+     }
+     .vector {
+       height:360px;
+       margin-top:100px;
+       
+     }
+     .moto {
+       
+       position: absolute;
+       top:-30px;
+       padding-top:20px;
+       width:290px;
+     }
+      .moto h2 {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    font-size: 24px;
+     }
+     .moto p {
+       text-align: center;
+       text-transform: uppercase;
+       font-family: Monospace;
+       font-weight: 500;
+     }
+     marquee {
+       padding-top:20px;
+     }
+ 
+    
+      .iq {
+         display:flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column-reverse;
+      }
+      .iq-img-space{
+        height:250px;
+        border-radius: 1000px;
+        border:;
+        box-shadow:0px 2px 20px #F45C43;
+        margin:20px auto;
+        background-image:linear-gradient(to top left,#EB3349, #F45C43);
+        overflow: hidden;
+      }
+      .iq-img {
+        border-radius:1000px;
+        height:250px;
+        filter:brightness(120)%);
+        scale:1.2;
+        
+      }
+      
+  
+  @media screen and (min-width:900px) {
+     
+    
+    
+    
+      
+        
+          
+        
+      .landing {
+         display:grid;
+         grid-template-columns: auto;
+         background-image:linear-gradient(
+      120deg, rgba(244,92,67,1), rgba(235, 51,73,1) 
+                 );
+                 margin-bottom:60px;
+    /*   border-bottom:10px solid #D31027;
+       border-top:2px solid darkred;
+       */
+   
+      }
+
+    .vector {
+     /* margin-left:600px;*/
+      border-radius:10px;
+      
+    }
+      .right-landing {
+       display:flex; 
+       margin-bottom: 60px;
+      align-items:center;
+      justify-content: center;
+      width:400px;
+      margin-left:500px;
+      background-color:;
+     
+    }
+    
+  
+    
+    .landing .moto h2 {
+      color:white;
+      font-family: verdana;
+      font-size: 2.2rem;
+     /* top:100px;
+      left:50px;*/
+      font-weight:520;
+    }
+    .moto {
+       top:0;
+       left:0;
+     
+      width:50vw;
+      display:flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color:;
+      height:100%;
+    }
+    .moto p {
+      color:white;
+      width:400px;
+      font-size: 1.3rem;
+    }
+   
+   .full {
+ /*    display: flex;
+     flex-wrap: no-wrap;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+    */
+   }
+   .first {
+    background-color:;
+    width:40vw;
+     box-sizing: border-box;
+    justify-content:;
+  
+   }
+  .first * {
+    display:grid;
+    
+    
+  }
+    .last {
+      width: 40vw;
+      margin-left:0px;
+    display:flex;
+    justify-content: ;
+    
+    }
+   .last * {
+     display:grid;
+   }
+   
+   
+    
+  } 
+  
+  .card-f {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:50px;
+  
+}
+.cardm {
+  height:400px;
+  width:300px;
+  border:none;
+  border-radius:10px;
+  margin-bottom: 100px;
+box-shadow:1px 1px 20px #F45C43;
+
+}
+
+.icon-space {
+/*  background-color: red; */
+            background-image: linear-gradient(to left, #EB3349, #F45C43);
+  height:260px;
+  display:flex;
+  align-items:center;
+justify-content:center;
+  border-radius:10px 10px 0 0;
+
+}
+
+.icon-plane {
+  font-size:100px;
+  padding-top: 30px;
+
+  height:160px;
+  width:160px;
+  text-align: center;
+  background-color: white;
+  border-radius: 100px;
+  transition:1s ease;
+  cursor:pointer;
+}
+.icon-train {
+  font-size:100px;
+  padding-top: 30px;
+  
+  height:160px;
+  width:160px;
+  text-align: center;
+  background-color: white;
+  border-radius: 100px;
+  transition:1s ease;
+  cursor:pointer;
+}
+
+.icon-hotel {
+  font-size:100px;
+  padding-top: 30px;
+ 
+  height:160px;
+  width:160px;
+  text-align: center;
+  background-color: white;
+  border-radius: 100px;
+  transition:1s ease;
+  cursor:pointer;
+}
+
+
+.icon-plane:hover  {
+  animation-name: kinetic;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+
+@keyframes kinetic {
+  60% {
+    rotate:-60deg;
+  }
+  40% {
+    transform: translateX(-3rem)
+  }
+  
+}
+
+
+.icon-train:hover {
+  animation-name: come ;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  transition: ease-in-out;
+}
+
+@keyframes come {
+5% {
+  opacity:0;
+}
+ 20% {
+   font-size:1rem;
+   
+ }
+  40% {
+    opacity:1;
+  }
+  
+   
+    
+  
+  
+  60% {
+   
+  }
+  90% {
+    
+  }
+}
+.icon-hotel:hover {
+  animation-name: room ;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+
+@keyframes room {
+ 0% {
+   opacity:0 ;
+   
+ }
+ 5% {
+   transform: translateX(0px)
+ }
+  10% {
+   transform: translateX(-70px);
+   opacity: 0;
+  }
+
+  60% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  
+
+  
+
+
+
+}
+
+ 
+.text-space {
+  height:40px;
+  background-color: white;
+  border-radius:0 0 10px 10px;
+}
+
+
+
+.text {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  text-align: center;
+  padding-top: 30px;
+  
+}
+ h2 {
+   text-align: center;
+   font-size:30px;
+   margin-top: 40px;
+ 
+ }
+
+.text h3 {
+  font-weight: 420;
+  color:#262626;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.text p {
+  text-transform: capitalize;
+  font-weight:400;
+  color:#737373;
+  
+}
+
+
+#plane, #train, #hotel {
+  color:#EB3349;
+      
+}
+
+
+  
+@media screen and (min-width:900px) {
+  nav {
+    top:0;
+    position:sticky;
+    z-index:10000;
+  }
+  
+  .card-f {
+   
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  
+ 
+  }
+ 
+     nav .logo h1 {
+      font-size: 10px;
+    }
+  
+  
+  .cardm {
+   
+    margin: 0;
+    height:300px;
+    width:220px;
+  }
+  .icon-space {
+    height:180px;
+  }
+  .icon-plane, .icon-train ,.icon-hotel
+{
+  font-size:50px;
+  height:96px;
+  width:96px;
+  display:grid;
+ 
+}
+
+.text-space {
+  height:120px;
+  display:grid;
+  place-content: center;
+}
+  .text h3 {
+    margin-top:0;
+  }
+  
+  
+}
+/* Top Navbar  */
+
+
+
+
+ 
+
+  
+  nav {
+ /*   background: rgb(0, 0, 0); */
+    
+          background-image: linear-gradient(to right, #EB3349, #F45C43);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+      top: 0;
+      position: sticky;
+      z-index: 10000;
+    
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+    
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    font-size: 18px;
+    transition: 0.2s ease;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+  nav .mainMenu li a:hover {
+    background: tomato;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width:200px;
+    height:50px;
+    
+   background-color:;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   
+   
+  }
+  
+  nav .logo h1 {
+    font-size:30px;
+    text-align:center;
+  }
+  
+  @media (max-width: 900px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(255, 255, 255);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu li a {
+      color:black;
+    }
+    
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+      color:black;
+    }
+   .social {
+     display:none;
+    
+   }
+  }
+  nav {
+    top:0;
+    position:sticky;
+    z-index:10000;
+  }
+  @media only screen and (min-width:900px)
+  { .social  a {
+    border-radius:4px;
+    font-size:30px;
+    margin:10px;
+    color:#EB3349;
+   
+    cursor:pointer;
+    box-shadow:inset 3px 2px 1px #cccccc, 3px 2px 1px white;
+    background-color: white;
+   }
+   .social a:hover {
+     background-color:orangered;
+    box-shadow: inset 2px 2px 2px tomato, 2px 2px 4px #EB3349;
+   }
+   .social a:hover > i {
+     color:white;
+   }
+    #facebook, #instagram{
+     border:;
+     padding:6px;
+    width:40px;
+    
+   }
+   .social {
+     background-color:#e6e6e6;
+     width:130px;
+     border-radius: 5px;
+     margin-top: 30px;
+    
+     
+     display:flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     
+   }
+}
+     </style>
+  
+  
+  
+  </head>
+  <body>
+        <div id="hom">
+      
+    </div>
+    
+<nav>
+            <div class="logo"><h1>Iqbal Travel</h1></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="#hom">Home</a></li>
+                <li><a href="#ser">Services</a></li>
+                <li><a href="#abt">About</a></li>
+                <li><a href="#con">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                   <a href="https://m.facebook.com/100862559441056/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/iqbaltravels195/"><i class="fab fa-instagram"></i></a>
+                <!-- <i class="fab fa-twitter"></i> -->
+                  
+                </span>
+            </ul>
+        </nav>
+    
+
+    
+
+
+    
+    
+ <div class="landing">
+  <div class="moto">
+       <h2>High Class, Low Fares</h2>
+      <p>Best deals on flights booking, train booking & hotel booking.</p>
+    <div class="social">
+          <a href="https://m.facebook.com/100862559441056/"><i class="fab fa-facebook-f"id="facebook"></i></a>
+       
+    
+            <a href="https://www.instagram.com/iqbaltravels195/"><i class="fab fa-instagram"id="instagram"></i></a>
+    
+    </div>
+ 
+  </div>
+
+   <div class="right-landing">
+     
+  
+   <img src="https://img.freepik.com/free-vector/trip-concept-illustration_114360-1247.jpg?w=740&t=st=1665037772~exp=1665038372~hmac=cd08e6b08311e3094f5c0c3e14b87695e9502ba57415636ab108c67266ceb6dc" class="vector" alt="travel.jpg" />
+ </div>
+  </div>
+  
+<div id="ser">
+  
+</div>
+  
+  <h2>Our Services</h2>
+  
+    <div class="card-f">
+  
+
+  
+      <div class="cardm">
+        <div class="icon-space">
+          <div class="icon-plane">
+            <i class="fa-solid fa-plane" id="plane"></i>
+          </div>
+        </div>
+        <div class="text-space">
+          <div class="text">
+            <h3>Flight Tickets</h3>
+            <p>book flight ticket with us and get exclusive discounts & offers</p>
+          </div>
+        </div>
+  
+      </div>
+  
+  
+  
+      <div class="cardm">
+        <div class="icon-space">
+          <div class="icon-train">
+            <i class="fa-solid fa-train" id="train"></i>
+          </div>
+        </div>
+        <div class="text-space">
+          <div class="text">
+            <h3>Train Tickets</h3>
+            <p>Book train ticket with us</p>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+  
+
+  
+      <div class="cardm">
+        <div class="icon-space">
+          <div class="icon-hotel">
+            <i class="fa-solid fa-hotel" id="hotel"></i>
+          </div>
+        </div>
+  
+        <div class="text-space">
+          <div class="text">
+            <h3>Hotel Booking</h3>
+            <p>Book hotel with us and get exclusive discounts & offers</p>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+
+
+<div id="abt">
+  
+</div>
+<br><br>
+<p class="h2">About Us</p>
+  
+<div class="iq">
+  <div class="iq-text">
+    <h3>Iqbal Khan - Founder</h3>
+  </div>
+  <div class="iq-img-space">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/QQKg1VD/Picsart-22-10-08-12-29-14-865.png" alt="Iqbal Khan.jpg" class="iq-img"</a>
+  </div>
+  
+</div>
+ 
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+91 87894 93087", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+
+
+<div id="con">
+  
+</div>
+<div class="full">
+  
+
+   <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+   <div class="first">      <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-danger"style="font-family:verdana"><span class="text-white">IQBAL</span> TRAVELS</h1>
+                </a>
+                <p></p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                          <div class="d-flex justify-content-start">
+            
+            
+                    <a class="btn btn-outline-danger btn-square mr-2" style="" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-danger btn-square mr-2" style="margin-left:4px" href="https://m.facebook.com/100862559441056/"><i class="fab fa-facebook-f"></i></a>
+                   
+                    <a class="btn btn-outline-danger btn-square" 
+style="margin-left:4px"
+                    href="https://www.instagram.com/iqbaltravels195/"><i class="fab fa-instagram"></i></a>
+
+           
+                   </div>
+               </div>
+            </div>
+       
+            <div class="last">
+           
+     <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Coconut Garden Rd, Bengaluru, Karnataka 560090</p>
+                <p><i class="fa fa-phone-alt mr-2">+91 87894 93087</i></p>
+                                <p><i class="fa fa-phone-alt mr-2">+919525344097</i></p>
+                <p>Available - 9:00 AM to 11:00 PM</p>
+                <p><i class="fa fa-envelope mr-2"></i>iqbaltravels195@gmail.com</p>
+ </div>
+     </div>       </div>
+        </div>
+    </div>
+<div id="cont">
+  
+</div>
+
+<script>
+  const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%';
+}
+</script>
+
+
+
+  </body>
+</html>
