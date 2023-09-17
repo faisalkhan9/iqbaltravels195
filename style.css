@@ -266,6 +266,7 @@
       border-right: none;
       border-radius: 0;
       padding-left: 10px;
+        padding-right:10px;
       color: #262626;
       font-size: 1.4rem;
     }
@@ -527,11 +528,7 @@
         transition: transform linear .2s;
     }
 
-    .linear-bars .fa-brands:hover {
-
-      transform: scale(1.1);
-      text-shadow: 0 0 5px red, 0 0 10px red;
-    }
+    
 
     .contact {
       display: flex;
