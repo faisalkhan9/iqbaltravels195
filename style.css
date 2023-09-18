@@ -291,8 +291,8 @@
       color: white;
     }
 
-    .image img {
-
+ .section-hero  .image img {
+  filter:hue-rotate(-5deg) saturate(1.2);
       height: 240px;
     }
 
